@@ -3,15 +3,15 @@
   --header-color: #008080;
   --blue: lightblue;
   --red: lightpink;
-  --name-size: 1.4rem;
-  --business-size: 1.2rem;
+  --name-size: 1.1rem;
+  --business-size: 1.5rem;
   --message-size: 1rem;
   --menu-size: 1.1rem;
   --menu-items: 3;
   --menu-ratio: 2;
   --menu-height: calc((var(--emoji-size) * var(--menu-items)) * var(--menu-ratio));
   --emoji-size: 1.2rem;
-  --header-ratio: 1.7;
+  --header-ratio: 1.9;
   --header-height: calc((var(--name-size) + var(--business-size)) * var(--header-ratio));
   --avatar-size: calc(var(--name-size) + var(--business-size))
 }
@@ -168,7 +168,7 @@ section {
 }
 
 .message {
-  line-height: 1.3rem;
+  line-height: 1.4rem;
   padding: 0.5rem;
   font-size: var(--message-size);
   width: auto;
@@ -185,6 +185,14 @@ section {
   height: auto;
   padding: 6px 0;
   filter: drop-shadow(0 0 6px rgba(10, 10, 10, 0.5));
+}
+.video-message-box {
+  width: auto;
+  height: 150px;
+  margin:6px 0;
+filter: drop-shadow(0 0 6px rgba(10, 10, 10, 0.5));
+/*background: rgb(217, 253, 211);*/
+ /* background: rgb(217, 253, 211);*/
 }
 
 .sticker-message-box {
@@ -208,7 +216,13 @@ section {
 .landscape {
   height: 150px;
 }
-
+.video-message {
+  width: auto;
+  height: 150px;
+}
+/*.video-message video {
+  background: rgb(217, 253, 211);
+}*/
 .image-message {
   display: flex;
   align-items: center;
@@ -225,6 +239,10 @@ section {
   width: auto;
   height: 100%;
 }
+.image-message video {
+  width: 300px;
+  height: 100%;
+}
 
 .message-box.right, .image-message-box.right, .sticker-message-box.right {
   justify-content: end;
@@ -235,8 +253,9 @@ section {
 }
 
 .emoji {
-  font-size: 2rem;
-  padding: 2px;
+  font-size: 1.4rem;
+  /*line-height:1rem;
+  padding: 2px;*/
 }
 
 .emoji-line {
