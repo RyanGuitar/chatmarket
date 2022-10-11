@@ -128,7 +128,7 @@ header {
 
 .header-background {
   image-rendering: -webkit-optimize-contrast;
-  background-image: url("header.webp");
+  background-image: url("main.webp");
   background-color: #005e54;
   height: var(--header-height);
   background-position: center;
@@ -162,7 +162,6 @@ section {
 .message-box {
   display: flex;
   justify-content: start;
-  /*background: var(--blue);*/
   width: 100%;
   padding: 6px 0px;
 }
@@ -218,9 +217,7 @@ filter: drop-shadow(0 0 6px rgba(10, 10, 10, 0.5));
   width: auto;
   height: 150px;
 }
-/*.video-message video {
-  background: rgb(217, 253, 211);
-}*/
+
 .image-message {
   display: flex;
   align-items: center;
@@ -252,8 +249,6 @@ filter: drop-shadow(0 0 6px rgba(10, 10, 10, 0.5));
 
 .emoji {
   font-size: 1.4rem;
-  /*line-height:1rem;
-  padding: 2px;*/
 }
 
 .emoji-line {
@@ -281,7 +276,7 @@ filter: drop-shadow(0 0 6px rgba(10, 10, 10, 0.5));
   margin: 8px;
   background: transparent;
 }
-
-/*@media screen and (orientation:landscape) {
-
-}*/
+.lazy {
+  width:auto;
+  height:150px;
+}
